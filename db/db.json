@@ -101,7 +101,7 @@
         "Cebola caramelizada",
         "Farofa de bacon"
       ],
-      "status": "Solicitado",
+      "status": "Em produção",
       "id": 1
     },
     {
@@ -122,6 +122,21 @@
       "opcionais": [],
       "status": "Solicitado",
       "id": 4
+    },
+    {
+      "nome": "Cleber",
+      "carne": "Maminha",
+      "pao": "Australiano",
+      "opcionais": [
+        "Bacon",
+        "Salame",
+        "Farofa de bacon",
+        "Cebola caramelizada",
+        "Cheddar",
+        "Geleia de pimenta"
+      ],
+      "status": "Em produção",
+      "id": 5
     }
   ]
 }
