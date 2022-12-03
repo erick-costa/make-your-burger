@@ -17,26 +17,30 @@
           <label for="bread">Escolha o pão:</label>
           <select name="bread" id="bread" v-model="bread">
             <option value="">Selecione o seu pão</option>
-            <option value="gergelim">Gergelim</option>
+            <option v-for="bread in breads" :value="bread.tipo">
+              {{ bread.tipo }}
+            </option>
           </select>
         </div>
         <div class="input-container">
           <label for="meat">Escolha a carne do seu burger:</label>
           <select name="meat" id="meat" v-model="meat">
             <option value="">Selecione o tipo de carne</option>
-            <option value="fraldinha">Fraldinha</option>
+            <option v-for="meat in meats" :value="meat.tipo">
+              {{ meat.tipo }}
+            </option>
           </select>
         </div>
         <div id="extras-container" class="input-container">
           <label id="extras-title" for="extras">Selecione os opcionais:</label>
-          <div class="checkbox-container">
+          <div class="checkbox-container" v-for="extra in extrasdata">
             <input
               type="checkbox"
               name="extras"
               v-model="extras"
-              value="bacon"
+              :value="extra.tipo"
             />
-            <span>Bacon</span>
+            <span>{{ extra.tipo }}</span>
           </div>
         </div>
         <div class="input-container">
@@ -50,6 +54,32 @@
 <script>
 export default {
   name: "BurgerForm",
+  data() {
+    return {
+      breads: null,
+      meats: null,
+      extrasdata: null,
+      name: null,
+      bread: null,
+      meat: null,
+      extras: [],
+      status: "Solicitado",
+      msg: null,
+    }
+  },
+  methods: {
+    async getIngredients() {
+      const req = await fetch("http://localhost:3000/ingredientes")
+      const data = await req.json()
+
+      this.breads = data.paes
+      this.meats = data.carnes
+      this.extrasdata = data.opcionais
+    },
+  },
+  mounted() {
+    this.getIngredients()
+  },
 }
 </script>
 
