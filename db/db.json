@@ -89,5 +89,20 @@
       "tipo": "Finalizado"
     }
   ],
-  "burgers": []
+  "burgers": [
+    {
+      "nome": "Erick",
+      "carne": "Maminha",
+      "pao": "Brioche",
+      "opcionais": [
+        "Bacon",
+        "Salame",
+        "Tomate",
+        "Cebola caramelizada",
+        "Farofa de bacon"
+      ],
+      "status": "Solicitado",
+      "id": 1
+    }
+  ]
 }
