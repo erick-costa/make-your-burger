@@ -105,18 +105,6 @@
       "id": 1
     },
     {
-      "nome": "Beatriz",
-      "carne": "Alcatra",
-      "pao": "Australiano",
-      "opcionais": [
-        "Cheddar",
-        "Bacon",
-        "Cebola caramelizada"
-      ],
-      "status": "Solicitado",
-      "id": 2
-    },
-    {
       "nome": "Erick",
       "carne": "Maminha",
       "pao": "Gergelim",
