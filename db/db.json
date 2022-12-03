@@ -89,54 +89,5 @@
       "tipo": "Finalizado"
     }
   ],
-  "burgers": [
-    {
-      "nome": "Erick",
-      "carne": "Maminha",
-      "pao": "Brioche",
-      "opcionais": [
-        "Bacon",
-        "Salame",
-        "Tomate",
-        "Cebola caramelizada",
-        "Farofa de bacon"
-      ],
-      "status": "Em produção",
-      "id": 1
-    },
-    {
-      "nome": "Erick",
-      "carne": "Maminha",
-      "pao": "Gergelim",
-      "opcionais": [
-        "Cheddar",
-        "Bacon"
-      ],
-      "status": "Solicitado",
-      "id": 3
-    },
-    {
-      "nome": "Maria",
-      "carne": "Picanha",
-      "pao": "Gergelim",
-      "opcionais": [],
-      "status": "Solicitado",
-      "id": 4
-    },
-    {
-      "nome": "Cleber",
-      "carne": "Maminha",
-      "pao": "Australiano",
-      "opcionais": [
-        "Bacon",
-        "Salame",
-        "Farofa de bacon",
-        "Cebola caramelizada",
-        "Cheddar",
-        "Geleia de pimenta"
-      ],
-      "status": "Em produção",
-      "id": 5
-    }
-  ]
+  "burgers": []
 }
