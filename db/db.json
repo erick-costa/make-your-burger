@@ -103,6 +103,37 @@
       ],
       "status": "Solicitado",
       "id": 1
+    },
+    {
+      "nome": "Beatriz",
+      "carne": "Alcatra",
+      "pao": "Australiano",
+      "opcionais": [
+        "Cheddar",
+        "Bacon",
+        "Cebola caramelizada"
+      ],
+      "status": "Solicitado",
+      "id": 2
+    },
+    {
+      "nome": "Erick",
+      "carne": "Maminha",
+      "pao": "Gergelim",
+      "opcionais": [
+        "Cheddar",
+        "Bacon"
+      ],
+      "status": "Solicitado",
+      "id": 3
+    },
+    {
+      "nome": "Maria",
+      "carne": "Picanha",
+      "pao": "Gergelim",
+      "opcionais": [],
+      "status": "Solicitado",
+      "id": 4
     }
   ]
 }
